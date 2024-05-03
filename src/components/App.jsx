@@ -24,9 +24,6 @@ function App() {
           <Route path='/Wie' element={<Wie />} />
           <Route path='/aess' element={<Aess />} />
           <Route path='/events' element={<EventList />} />
-          <Route path='/events/:eventId' element={<ShowEvents />} />
-
-          {/* Add other Route components for different paths */}
         </Routes>
       </DefaultLayout>
     </Router>
