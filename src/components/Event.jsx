@@ -142,8 +142,6 @@ const sampleEvents = [
   },
 ];
 
-
-
 import React from "react";
 
 function EventList() {
@@ -167,10 +165,10 @@ function EventList() {
                     <div className='card-body'>
                       <h5 className='card-title'>{event.eventName}</h5>
                       <p className='card-text'>
-                        <i className='fa-regular fa-calendar'></i>&ThickSpace;{" "}
+                        <i className='fa-regular fa-calendar'></i> &nbsp;{" "}
                         {event.eventDate}
                       </p>
-                      <p className='card-text'>{event.eventDescription}</p>
+                      {/* <p className='card-text'>{event.eventDescription}</p> */}
                       <a href={`/events/${index}`}>
                         <button className='btn btn-dark'>Learn more</button>
                       </a>
