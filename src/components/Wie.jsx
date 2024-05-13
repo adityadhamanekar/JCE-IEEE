@@ -2,9 +2,11 @@ import React from "react";
 
 function Wie() {
   return (
-    <div className='wie_page'>
-      <img src='/img/wie.png' alt='' className='wie_img' />
-      <h1 className='Wie_h'>IEEE WOMEN IN ENGINEERING</h1>
+    <>
+      <div className='wie_page'>
+        <img src='/img/wie.png' alt='' className='wie_img' />
+        <h1 className='Wie_h'>IEEE WOMEN IN ENGINEERING</h1>
+      </div>
       <p className='wie_para'>
         IEEE Women in Engineering (WIE) is a vibrant global community dedicated
         to promoting women's involvement and leadership in the fields of
@@ -54,7 +56,7 @@ function Wie() {
         building a more inclusive and diverse engineering community, where
         everyone can thrive and contribute to a brighter future.
       </p>
-    </div>
+    </>
   );
 }
 
