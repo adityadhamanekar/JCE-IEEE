@@ -6,7 +6,6 @@ function ShowEvents() {
   const location = useLocation();
   const { id } = useParams();
   const event = sampleEvents[id];
-  console.log(event);
 
   if (!event) {
     // Handle case where event data is not available

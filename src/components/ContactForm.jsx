@@ -1,6 +1,6 @@
 // ContactForm.jsx
 
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -16,12 +16,11 @@ function ContactForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log(formData);
   };
 
   return (
-    <body className="contact_body">
+    <body className='contact_body'>
       <div className='contact'>
         <h1 className='contacth'>Connect with us</h1>
         <form onSubmit={handleSubmit} className='needs-validation' noValidate>
