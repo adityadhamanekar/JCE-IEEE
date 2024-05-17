@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -104,9 +105,9 @@ function Footer() {
                   alt=''
                   className='forward_icon'
                 />
-                <a href='/' className='f_a'>
+                <NavLink to='/' className='f_a'>
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
                 <img
@@ -114,9 +115,9 @@ function Footer() {
                   alt=''
                   className='forward_icon'
                 />
-                <a href='/events' className='f_a'>
+                <NavLink to='/events' className='f_a'>
                   Events
-                </a>
+                </NavLink>
               </li>
               <li>
                 <img
@@ -124,9 +125,9 @@ function Footer() {
                   alt=''
                   className='forward_icon'
                 />
-                <a href='/team' className='f_a'>
+                <NavLink to='/team' className='f_a'>
                   Execom 2024
-                </a>
+                </NavLink>
               </li>
               <li>
                 <img
@@ -134,9 +135,9 @@ function Footer() {
                   alt=''
                   className='forward_icon'
                 />
-                <a href='/contact' className='f_a'>
+                <NavLink to='/contact' className='f_a'>
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
