@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className='navbar bg-body-light navbar-expand-lg border-bottom sticky-top'>
       <div className='container-fluid'>
-        <a className='navbar-brand' href='/'>
+        <NavLink className='navbar-brand' to='/'>
           <img src='/img/logo.png' alt='Logo' width='100' />
-        </a>
+        </NavLink>
         <button
           className='navbar-toggler'
           type='button'
@@ -36,19 +37,23 @@ function Navbar() {
           <div className='offcanvas-body'>
             <ul className='navbar-nav justify-content-start flex-grow-1 pe-3 nav-underline'>
               <li className='nav-item'>
-                <a className='nav-link active' aria-current='page' href='/'>
+                <NavLink
+                  className='nav-link active'
+                  aria-current='page'
+                  to='/'
+                >
                   About
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='/events'>
+                <NavLink className='nav-link' to='/events'>
                   Events
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item dropdown'>
                 <a
                   className='nav-link dropdown-toggle'
-                  href='#'
+                  to='#'
                   role='button'
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
@@ -57,29 +62,29 @@ function Navbar() {
                 </a>
                 <ul className='dropdown-menu'>
                   <li>
-                    <a className='dropdown-item' href='/Wie'>
+                    <NavLink className='dropdown-item' to='/Wie'>
                       Women in Engineering
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className='dropdown-divider' />
                   </li>
                   <li>
-                    <a className='dropdown-item' href='/aess'>
+                    <NavLink className='dropdown-item' to='/aess'>
                       AESS
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='/team'>
+                <NavLink className='nav-link' to='/team'>
                   Team
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='/contact'>
+                <NavLink className='nav-link' to='/contact'>
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
