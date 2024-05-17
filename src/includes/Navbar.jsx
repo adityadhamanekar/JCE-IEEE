@@ -2,6 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const handleNavLinkClick = () => {
+    // Close the navbar when a navigation link is clicked
+    document.querySelector(".navbar-toggler").click();
+  };
+
   return (
     <nav className='navbar bg-body-light navbar-expand-lg border-bottom sticky-top'>
       <div className='container-fluid'>
@@ -37,12 +42,21 @@ function Navbar() {
           <div className='offcanvas-body'>
             <ul className='navbar-nav justify-content-start flex-grow-1 pe-3 nav-underline'>
               <li className='nav-item'>
-                <NavLink className='nav-link active' aria-current='page' to='/'>
+                <NavLink
+                  className='nav-link active'
+                  aria-current='page'
+                  to='/'
+                  onClick={handleNavLinkClick}
+                >
                   About
                 </NavLink>
               </li>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='/events'>
+                <NavLink
+                  className='nav-link'
+                  to='/events'
+                  onClick={handleNavLinkClick}
+                >
                   Events
                 </NavLink>
               </li>
@@ -58,7 +72,11 @@ function Navbar() {
                 </a>
                 <ul className='dropdown-menu'>
                   <li>
-                    <NavLink className='dropdown-item' to='/Wie'>
+                    <NavLink
+                      className='dropdown-item'
+                      to='/Wie'
+                      onClick={handleNavLinkClick}
+                    >
                       Women in Engineering
                     </NavLink>
                   </li>
@@ -66,19 +84,31 @@ function Navbar() {
                     <hr className='dropdown-divider' />
                   </li>
                   <li>
-                    <NavLink className='dropdown-item' to='/aess'>
+                    <NavLink
+                      className='dropdown-item'
+                      to='/aess'
+                      onClick={handleNavLinkClick}
+                    >
                       AESS
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='/team'>
+                <NavLink
+                  className='nav-link'
+                  to='/team'
+                  onClick={handleNavLinkClick}
+                >
                   Team
                 </NavLink>
               </li>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='/contact'>
+                <NavLink
+                  className='nav-link'
+                  to='/contact'
+                  onClick={handleNavLinkClick}
+                >
                   Contact
                 </NavLink>
               </li>
