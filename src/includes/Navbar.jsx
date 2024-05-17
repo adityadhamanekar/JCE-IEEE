@@ -37,11 +37,7 @@ function Navbar() {
           <div className='offcanvas-body'>
             <ul className='navbar-nav justify-content-start flex-grow-1 pe-3 nav-underline'>
               <li className='nav-item'>
-                <NavLink
-                  className='nav-link active'
-                  aria-current='page'
-                  to='/'
-                >
+                <NavLink className='nav-link active' aria-current='page' to='/'>
                   About
                 </NavLink>
               </li>
