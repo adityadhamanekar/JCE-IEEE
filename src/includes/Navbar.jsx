@@ -1,7 +1,9 @@
-import React from "react";
+import { Dropdown } from "bootstrap";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+ 
   return (
     <nav className='navbar bg-body-light navbar-expand-lg border-bottom sticky-top'>
       <div className='container-fluid'>
@@ -46,7 +48,7 @@ function Navbar() {
                   Events
                 </NavLink>
               </li>
-              <li className='nav-item dropdown'>
+              <li className='nav-item dropdown' >
                 <a
                   className='nav-link dropdown-toggle'
                   to='#'
