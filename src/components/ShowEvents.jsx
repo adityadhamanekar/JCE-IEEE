@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import sampleEvents from "./eventData";
 
 function ShowEvents() {
@@ -11,6 +11,12 @@ function ShowEvents() {
     // Handle case where event data is not available
     return <div>Event data not found!</div>;
   }
+
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate(-1); // This will go back to the previous page
+  };
 
   return (
     <div className='show_page'>
@@ -47,6 +53,13 @@ function ShowEvents() {
           ))}
         </div>
       )}
+      <button
+        className='btn btn-dark'
+        style={{margin:'2rem'}}
+        onClick={handleBack}
+      >
+        Back
+      </button>
     </div>
   );
 }
