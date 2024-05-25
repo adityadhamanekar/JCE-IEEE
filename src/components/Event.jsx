@@ -3,13 +3,13 @@ import sampleEvents from "./eventData";
 import { Link } from "react-router-dom";
 
 function EventList() {
-  
+  const sampleEvent = useMemo(()=> sampleEvents, []);
   return (
     <div className='event_body'>
       <div className='event_page'>
         <div className='d-flex justify-content-center'>
           <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 event_row'>
-            {sampleEvents.map((event, index) => (
+            {sampleEvent.map((event, index) => (
               <div className='col' key={index}>
                 <div className='d-flex justify-content-center h-100'>
                   <div
