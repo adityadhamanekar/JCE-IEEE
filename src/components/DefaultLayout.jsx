@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../includes/Navbar";
 import Footer from "../includes/Footer";
 
+
 function DefaultLayout({ children }) {
   return (
     <>

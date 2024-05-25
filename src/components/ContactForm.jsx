@@ -20,7 +20,7 @@ function ContactForm() {
   };
 
   return (
-    <body className='contact_body'>
+    <section className='contact_body'>
       <div className='contact'>
         <h1 className='contacth'>Connect with us</h1>
         <form onSubmit={handleSubmit} className='needs-validation' noValidate>
@@ -90,7 +90,7 @@ function ContactForm() {
           <br />
         </form>
       </div>
-    </body>
+    </section>
   );
 }
 

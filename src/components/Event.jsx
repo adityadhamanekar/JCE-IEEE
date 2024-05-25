@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import sampleEvents from "./eventData";
 import { Link } from "react-router-dom";
 
 function EventList() {
+  
   return (
     <div className='event_body'>
       <div className='event_page'>

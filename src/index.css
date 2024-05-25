@@ -400,6 +400,7 @@ ul {
 
 .contact_body {
   background-color: #074173;
+  padding: 1rem 0rem;
 }
 
 .contacth {
@@ -455,4 +456,13 @@ ul {
   .grid {
     padding: 0 !important;
   }
+}
+
+/* bootstrap styles */
+.offcanvas-backdrop.show {
+  opacity: 0 !important;
+}
+
+.offcanvas-backdrop {
+  height: 0px !important;
 }

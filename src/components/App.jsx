@@ -1,4 +1,7 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import DefaultLayout from "./DefaultLayout";
 import Home from "./Home";
 import Team from "./Team";
@@ -7,8 +10,8 @@ import EventList from "./Event";
 import ShowEvents from "./ShowEvents";
 import Wie from "./Wie";
 import Aess from "./Aess";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
