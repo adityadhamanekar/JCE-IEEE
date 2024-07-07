@@ -50,7 +50,7 @@ const wieStudent = [
     title: "WIE Secratery",
   },
   {
-    name: "Rohit Hegade",
+    name: "Pawan Wader",
     image: "Rohit Hegade.JPG",
     title: "WIE Treasurer",
   },
