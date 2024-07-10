@@ -104,6 +104,21 @@ function Team() {
                 </div>
               </div>
             </div>
+            <div className='col col-item'>
+              <div className='card execom_card' style={{ width: "18rem" }}>
+                <img
+                  src='/img/Chandan Kangralkar.JPG'
+                  className='card-img execom_img d_img'
+                  alt='Deepali Patil'
+                />
+                <div className='card-body'>
+                  <h5 className='card-title card_prof_title'>
+                    <b>Chandan Kangralkar</b>
+                  </h5>
+                  <p className='card-text card_prof_text'>IEEEXtreme 18.0 Student Ambassador</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
